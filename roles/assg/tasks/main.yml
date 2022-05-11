@@ -1,4 +1,5 @@
 ---
 # tasks file for assg
-- include: deploy.yml
-- include: blog.yml
+- include_tasks: deploy.yml
+- include_tasks: blog.yml
+  tags: posts

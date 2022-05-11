@@ -1,51 +1,53 @@
 ---
 # vars file for assg
-document_root: /var/www/html
-site_title: my site
-site_url: http://www.my.blog
+document_root: /var/www/evilcyberhacker/html
+site_title: darkphoenix
+site_url: https://evilcyberhacker.net
+
+description: I make stuff.  Some of this stuff is here. # Short description about yourself.
+about: "Note to self: put some text here I guess?" # About yourself.
+profile: img/profile.jpg # Profile Picture for Home Page.
+#og_image: assets/profile.png # Open Graph Image for Link Previews
+home:
+  icon: home # Icon for Home Button.
+  text: Home # Text for Home Button link.
+reader_arrow: # Text for screen readers to read in place of the next arrow on the Home Page.
+email: mail@evilcyberhacker.net
+github: darkphoenix
+twitter: dark_phoenix0 
+mastodon: https://social.evilcyberhacker.net/@jonas
+matrix: "@darkphoenix:evilcyberhacker.net"
+#Email and social media urls.
+projects:
+  - name: tolino-calibre-sync
+    description: A simple tool to sync a Calibre library into the tolino cloud
+    url: https://github.com/darkphoenix/tolino-calibre-sync
+    img: none
+  - name: epoch-wars
+    description: A small multiplayer game, built during a local game jam
+    url: https://github.com/darkphoenix/epoch-wars-server
+    img: none
+
 blog_posts:
   -
-    title: 'first post'
-    date: '1979-01-01'
+    title: 'Ex nihilo'
+    date: '2022-05-09'
+    public: true
     body: |
-      First post!
-      Static sites are the best.
-  -
-    title: 'another post'
-    date: '2017-09-12'
-    body: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et magna lorem. Ut et purus eu odio mollis tincidunt. Morbi et vehicula augue. Mauris id faucibus eros. Nulla vel urna ut nunc fermentum rhoncus a id risus. In dictum ultrices ultricies. Vestibulum eu libero leo. Curabitur leo turpis, ultrices vehicula nisl sit amet, commodo finibus enim. Cras posuere, lorem a vulputate tincidunt, ante lectus faucibus enim, eget blandit dui leo at ipsum. Morbi est justo, cursus et eleifend ac, consectetur sit amet arcu. Cras commodo a ex ut dictum.
-      Suspendisse potenti. Duis imperdiet dictum odio id iaculis. Vivamus ac diam sit amet nisi porttitor molestie id finibus dui. Proin quis sodales turpis. Donec consequat varius auctor. Sed est sapien, eleifend eget commodo nec, ullamcorper eu augue. Aliquam a tortor quis risus laoreet efficitur. Mauris ac dui orci.
-      Aliquam maximus, eros sed dapibus faucibus, eros felis egestas ligula, non pulvinar nibh arcu eget sem. Nunc malesuada mi sem, non convallis turpis accumsan vitae. Sed congue quis mi at consectetur. Nam pellentesque arcu bibendum lectus volutpat maximus. Nam tortor magna, pharetra eget tellus sit amet, suscipit gravida sem. Phasellus massa diam, commodo non erat nec, faucibus porta sapien. Integer fringilla efficitur vehicula.
-      Cras auctor hendrerit aliquet. Mauris laoreet magna sit amet ipsum placerat porttitor. Duis erat erat, porttitor id consequat ut, dignissim vel libero. Fusce dapibus dapibus turpis, nec pretium purus pharetra at. Sed mattis eget sem sit amet tristique. Sed sed mi lacus. Ut quis faucibus nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas non consectetur dolor, ut pellentesque nibh. Vivamus nulla magna, semper at ex fringilla, vulputate facilisis quam. Aenean iaculis id lectus sed convallis. Nulla tristique, massa sed malesuada euismod, lorem sem egestas urna, id egestas risus sapien vel dolor. Duis congue congue laoreet.
-      Nulla facilisi. Integer ut risus pellentesque, molestie purus a, viverra neque. Duis dictum, quam at posuere scelerisque, dui nulla semper nulla, a ultrices est felis ut leo. Integer venenatis bibendum risus, sit amet molestie neque molestie non. In ultricies arcu vitae lacus condimentum sodales in sit amet lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris convallis neque sapien, sit amet fermentum lectus interdum ac. Maecenas at congue ligula. Sed est sem, feugiat id aliquam in, elementum eget urna. Donec lacinia porttitor quam, eget placerat lectus bibendum ac. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut ligula enim, ultrices sollicitudin ligula eget, consequat dictum mauris. Donec placerat nulla sapien. 
-  - 
-    title: 'last post'
-    date: '2049-12-31'
-    body: |
-      Goodbye cruel world.
-about:
-  body: |
-    My name is mud.
-    I'm in to this and that.
-    I like cheese.
+      I've been meaning to actually use the “blog” section of this site, and I guess now is as good a time as ever.  2022 by most accounts would seem to be at least a decade too late to start a blog but bear with me for a bit here.
+      Over the past few months, for various reasons, I’ve started thinking more about the fundamental assumptions we make when discussing social media.  In retrospect it is suddenly very noticeable which things we consider open for debate and improvement, and which we consider the bedrock of the entire thing and don't even view as claims to interrogate, just as almost self-evident truths.  In more technologically and/or politically active circles, we constantly discuss what we'd want to change about the way social media companies as they exist today operate, often by means of regulation, but we rarely question why we're tolerating their monopoly as a whole and the fact that the internet for most people now just consists of a handful of walled gardens.  To be blunt, we bemoan Twitter being bought out by a person we (probably justifiably) ascribe bad intentions to, but we don't stop to question why so much online activism and politics and public discourse happen on a single site that can be bought.
 
-bottom_links:
-  -
-    name: linkedin
-    target: http://linkedin.com/itsme
-  -
-    name: twitter
-    target: https://twitter.com/itsme
-  -
-    name: github
-    target: https://github.com/itsme
+      One of the major reasons that initially got me more interested in the entire subject matter was that after the first discussions around Elon Musk buying a stake in Twitter, I dusted off my Mastodon instance.  I’d had it since 2018, but was never all that active on it, and I figured going over and seeing how much of my extended online bubble was there was a way to hedge my bets a bit.  What I experienced over there surprised me in two ways: firstly, it was a profoundly different culture, a lot of it reminding me of the “nicer” times on social media around a decade ago, before it got quite as violently polarised as it is now (though some of that may be rose tinted memories), and secondly, it was active way beyond what I had expected. 
+      For all I’d experimented before, in 2018 the fediverse seemed to me like a rather empty space except for a few geeks who also didn’t use their accounts all that much.  It reinforced my belief at the time that for all we’d wish there were alternatives, the network effects are just too strong, and they’d always be but a digital ghost town.  Now I was looking around and the place was definitely alive, and not just with people who’d also ran from Twitter, but people who’d been active, quietly building this place for themselves for years, a living, breathing example that maybe there are alternatives, and the big monoliths aren’t quite as unavoidable as I’d thought.
 
-top_links:
-  -
-    name: projectA
-    target: http://github.com
-  -
-    name: projectB
-    target: http://github.com
+      The other thing that motivated me to question dominant narratives around tech companies is the current meltdown around cryptocurrencies and blockchain technology (which is its own can of worms, but others have made any point I possibly could far better than I can).  Within that realm, a popular phrase which sort of gets thrown around is “code is law”, which of course implies that the code they’ve written in some way pre-empts the existing social constructs by which we govern ourselves, because code can do it more efficiently, more fairly, more transparently, or is in some other way superior, and because of its unchangeable nature it provides a convenient way to avoid human liability or consequences because “the code did it”, and anyway, there’s no possible remedy to whatever harm was supposedly caused because the code cannot be altered.
+      Starting from that stance, I then started to spot that exact argument pattern all the time in dominant narratives surrounding Silicon Valley, to the point where “disruption” and “innovation” commonly get equated to natural law.  The only way is forward, somebody somewhere would have made the same “innovation”, and that is then used to absolve the person or company who did from any consequences that technology causes in the real world.
+
+      What I found striking is how often we just take tech companies at their word when they use arguments like this, and then have all subsequent discussion of the merits of their products and the potential negative consequences of it on that premise.  Additionally, those same narratives about “disruption” are then used to synthesise the belief that this new thing is so fundamentally new and different that existing logic and reasoning do not apply to it, even when it is outwardly not substantially different from existing things except for the addition of “algorithms” in a largely techno-fetishist capacity with no clear explanation why they add anything even close to the value that is then ascribed to the company.  Two major examples of this in recent years are the “disruption” of the taxi industry by Uber and Lyft, and the current troubles of WeWork.
+
+      Another, less obvious example that even more critical observers regularly fall prey to is what Cory Doctorow described as <a href="https://pluralistic.net/2022/04/22/mesmer-2-point-oh/#thanks-obama">”criti-hype”</a> - that the way concern about algorithms manipulating politics is commonly discussed gives way more credit to those algorithms than they really deserve.  From the way they get discussed, you’d assume Facebook and Google’s targeted advertising are continuously offering the fate of countries up to the highest bidder, and voters at large have long since lost any agency in actually making their choices and are in fact all victims of successful digital mind control, when in fact, there is very little evidence these techniques are nearly as effective as they are portrayed to be.  In this way, even criticism is made on the premise that their product actually works, implicitly advertising to the world that there’s reason to be afraid and if you wish to manipulate a large group of people, giving money to Facebook or Google is in fact a viable means of doing so.
+
+      Noticing these things has sort of reshaped the way I view online meta discourse a fair bit, and I feel it’s certainly something we need to be aware of if we wish to actually have constructive discussions on related policy.  If we let corporations shape the very language we use to discuss them, it gives them an immense amount of power over our public discourse, and at the end of the day means even if we attempt to criticise them, we’re still ultimately doing that in the way they want us to – this is almost reminiscent of state propaganda to a degree, and I find it deeply concerning.
+
+      I don’t really have a neat conclusion or all of the answers here, I just felt the need to attempt to somewhat coherently write out my thoughts of the last few weeks.  I’m still very much new to the format, too, so I’d love to hear feedback of any kind, both on the structure and the contents – this is a static site with no comments section, but feel free to write me an e-mail, hit me up on Matrix, or find me on the fediverse :P
 

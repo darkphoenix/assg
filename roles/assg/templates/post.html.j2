@@ -3,11 +3,18 @@
 {{ site_title }}/blog/{{ item.title }}
 {% endblock %}
 {% block location %}
-{{ item.title }}
+/blog/{{ item.date | replace(' ', '_') }}-{{ item.title | replace(' ', '_') }}.html{% endblock %}
+{% block head %}
+<link href="/css/shariff.min.css" rel="stylesheet">
 {% endblock %}
 {% block content %}
-<b>{{ item.date }} |  {{ item.title }} </b>
-<p>
- {{ item.body | replace('\n', '<br><br>')}}
+        <section class="section modular bg-alt">
+            <section class="container">
+                <b>{{ item.date }} |  {{ item.title }} </b>
+                <p>
+                {{ item.body | replace('\n', '<br>')}}
+            </section>
+            <div class="shariff"></div>
+            <script src="/js/shariff.min.js"></script>
+        </section>
 {% endblock %}
-

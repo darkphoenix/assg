@@ -1,18 +1,36 @@
 ---
 - name: ensure blog dir is present
+  become: yes
   file:
     state: directory
     path: "{{ document_root }}/blog"
     mode: 0755
 
+- name: ensure feed dir is present
+  become: yes
+  file:
+    state: directory
+    path: "{{ document_root }}/feed"
+    mode: 0755
+
 - name: generate blog index
+  become: yes
   template:
     src: posts.html.j2
     dest: "{{ document_root }}/blog/index.html"
   tags:
   - posts
 
+- name: generate blog feed
+  become: yes
+  template:
+    src: feed.xml.j2
+    dest: "{{ document_root }}/feed/feed.rss"
+  tags:
+  - posts
+
 - name: generate posts
+  become: yes
   template:
     src: post.html.j2
     dest: "{{ document_root }}/blog/{{ item.date | replace(' ', '_') }}-{{ item.title | replace(' ', '_') }}.html"

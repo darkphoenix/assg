@@ -1,12 +1,134 @@
 {% extends "skeleton.html" %}
-{% block title %}
-{{ site_title }}
-{% endblock %}
-{% block location %}
-{% endblock %}
+{% block title %}Home | {{site_title }}{% endblock %}
+{% block logo %}{% endblock %}
 {% block content %}
-<p>
-{{ about.body | replace('\n', '<br><br>')}}
-</p>
-{% endblock %}
+        <div id="intro"></div>
+        <section class="section modular bg-alt">
+            <section class="container">
+                <div class="intro">
+                    <img alt="picture of &nbsp;{{site_title }}" class="intro__img circle" src="{{ profile }}" />
 
+                    <div class="intro__content  with-img  ">
+                        <h2>Hi, I'm&nbsp;{{ site_title }}!</h2>
+                        <h4><em>{{ description }}</em></h4>
+
+                        <div class="intro__links">
+                            <a href="mailto:{{ email }}" target="_blank">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="https://github.com/{{ github }}" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+
+                            <a href="https://twitter.com/{{twitter}}" target="_blank">
+                                <i class="fab fa-twitter"></i>
+
+                            <a href="{{mastodon}}" rel="me" target="_blank">
+                                <i class="fab fa-mastodon"></i>
+                            </a>
+
+                            <a href="https://matrix.to/#/{{matrix}}" target="_blank">
+                                <img src="/img/matrix.svg" alt="Matrix" style="height: 1em; width: 1em;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <div id="about"></div>
+        <section class="section modular ">
+            <section class="container">
+                <div class="about">
+                    <h2>About Me</h2>
+                    <p>{{ about }}</p>
+
+                    <div class="about__details">
+                        <div class="about__detail">
+                            <div class="about__detail__icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h4>Quality Code</h4>
+                            <div>I care about more than just correctness; my code isn't ready to go until it's
+                                organized, optimized, and documented.  The awful state of this website is my greatest achievement yet.</div>
+                        </div>
+                        <div class="about__detail">
+                            <div class="about__detail__icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <h4>Clear Communication</h4>
+                            <div>Garbled words</div>
+                        </div>
+                        <div class="about__detail">
+                            <div class="about__detail__icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h4>Open Source</h4>
+                            <div>I'm a firm believer that collaboration and sharing produce the best results, including
+                                in software, so I release my code as open source whenever possible.  That's why this my
+                                GitHub account is so chaotic it necessitates this website.</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <div id="projects"></div>
+        <section class="section modular bg-alt">
+            <section class="container">
+
+                <div class="projects projects-2">
+                    <h2>Projects</h2>
+                    <p>Get a feel for my work by checking out some of my recent projects below.</p>
+
+                    <div class="projects__cards">
+
+                        {% for project in projects %}
+                        <script>
+                            addToProjectPage(2, 0,
+                                '<div class="projects__item projects__card">' +
+                                '<a href="{{project.url}}" target="_blank">' +
+                                {% if project.img != 'none' %}
+                                    '<img alt="{{project.name}}" class="projects__card__img" src="{{project.img}}" />' +
+                                {% endif %}
+                            '<div class="projects__card__txt">' +
+                                '<h4>{{project.name}}</h4>' +
+                                '<div>{{project.description}}</div>' +
+                                '</div>' +
+                                '</a>' +
+                                '</div>' +
+
+                                ''
+                                                        );
+                        </script>
+                        {% endfor %}
+
+                        <!--script>
+                            addToProjectPage(2, 1,
+                                '<div class="projects__item projects__card">' +
+                                    '<a href="#" target="_blank">' +
+                                        '<img alt="arch-install" class="projects__card__img" src="/user/pages/01.home/_projects/arch-install.png" />' +
+                                        '<div class="projects__card__txt">' +
+                                            '<h4>arch-install</h4>' +
+                                            '<div>Bash scripts to install and setup Arch Linux</div>' +
+                                        '</div>' +
+                                    '</a>' +
+                                '</div>' +
+
+                                                            '<div class="projects__item projects__show-more--1">' +
+                                        '<button onClick="showProjectPage(2, 2)">' +
+                                            'Show more' +
+                                        '</button>' +
+                                    '</div>'
+                                                    );
+                        </script-->
+
+
+                    </div>
+                    <script>
+                        showProjectPage(2, 0);
+                    </script>
+                </div>
+            </section>
+        </section>
+{% endblock %}

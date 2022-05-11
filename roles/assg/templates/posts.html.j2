@@ -3,12 +3,19 @@
 {{ site_title }}/blog/
 {% endblock %}
 {% block location %}
+/blog/
 {% endblock %}
 {% block content %}
-<b>blog posts:</b>
-{% for post in blog_posts %}
-<p>
-<b>{{ post.date }}</b> <a href="{{ post.date | replace(' ', '_') }}-{{ post.title | replace(' ', '_') }}.html">{{ post.title }}</a>
-</p>
-{% endfor %}
+<section class="section modular bg-alt">
+    <section class="container">
+    <b>blog posts:</b>
+        {% for post in blog_posts %}
+        {% if post.public == True %}
+        <p>
+            <b>{{ post.date }}</b> <a href="{{ post.date | replace(' ', '_') }}-{{ post.title | replace(' ', '_') }}.html">{{ post.title }}</a>
+        </p>
+        {% endif %}
+        {% endfor %}
+    </section>
+</section>
 {% endblock %}
