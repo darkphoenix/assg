@@ -27,6 +27,10 @@ projects:
     description: A small multiplayer game, built during a local game jam
     url: https://github.com/darkphoenix/epoch-wars-server
     img: none
+  - name: assg
+    description: Ansible static site generator used to create this website
+    url: https://github.com/darkphoenix/assg
+    img: none
 
 blog_posts:
   -
