@@ -1,0 +1,1 @@
+NOTE: Content under this folder includes third-party resources, notably Google Fonts and FontAwesome as well as jQuery are covered by their respective licenses.  Some CSS and JavaScript also has license information included with it.
