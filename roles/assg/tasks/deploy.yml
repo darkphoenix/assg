@@ -23,6 +23,7 @@
     - fonts
     - img
     - js
+    - buttons
 - name: create index.html
   become: yes
   template:

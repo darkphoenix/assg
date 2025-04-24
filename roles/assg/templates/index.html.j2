@@ -24,7 +24,7 @@
                                 <i class="fab fa-twitter"></i>
 
                             <a href="{{mastodon}}" rel="me" target="_blank">
-                                <i class="fab fa-mastodon"></i>
+                                <img src="/img/fediverse.svg" alt="Fediverse" style="height: 1em; width: 1em; filter: invert(56%) sepia(14%) saturate(2757%) hue-rotate(173deg) brightness(99%) contrast(89%);"/>
                             </a>
 
                             <a href="https://matrix.to/#/{{matrix}}" target="_blank">
@@ -42,7 +42,7 @@
                 <div class="about">
                     <h2>About Me</h2>
                     <p>{{ about }}</p>
-
+<!--
                     <div class="about__details">
                         <div class="about__detail">
                             <div class="about__detail__icon">
@@ -68,7 +68,7 @@
                                 in software, so I release my code as open source whenever possible.  That's why this my
                                 GitHub account is so chaotic it necessitates this website.</div>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </section>
         </section>
@@ -79,7 +79,7 @@
 
                 <div class="projects projects-2">
                     <h2>Projects</h2>
-                    <p>Get a feel for my work by checking out some of my recent projects below.</p>
+                    <p>Have a look at some cool stuff I made :3</p>
 
                     <div class="projects__cards">
 
@@ -129,6 +129,51 @@
                         showProjectPage(2, 0);
                     </script>
                 </div>
+            </section>
+        </section>
+
+        <div id="friends"></div>
+        <section class="section modular bg-alt">
+            <section class="container">
+                <div class="friends friends-2">
+                    <h2>frens :3</h2>
+                    <p>totally random badges, nothing to see here :3</p>
+
+                    <a href="https://awawa.neocities.org">
+                      <img src="https://awawa.neocities.org/buttons/awawa.png" target="_blank" title="awawa.neocities.org">
+                    </a>
+
+                    <a href="https://flufftech.net">
+                      <img src="https://flufftech.net/button.png" target="_blank" title="flufftech.net">
+                    </a>                    
+                </div>
+            </section>
+            <section class="container">
+              <div class="orgs">
+                <h2>organisations and silly things</h2>
+
+                <a class="88x31" target="_blank" rel="noopener noreferrer">
+                  <img src="/buttons/NoBinaryNoProblem.png.webp" target="_blank" title="No binary? No problem!">
+                </a>
+                <a class="88x31" href="https://mozilla.org/firefox" target="_blank" rel="noopener noreferrer">
+                  <img src="/buttons/mozilla.png" title="firefox badge">
+                </a>
+                <a class="88x31" href="https://archive.org/" target="_blank" rel="noopener noreferrer">
+                  <img src="/buttons/internetarchive.png" title="internet archive">
+                </a>
+                <a class="88x31" target="_blank" rel="noopener noreferrer">
+                  <img src="/buttons/css-difficult.gif" title="proud css user">
+                </a>
+                <a class="88x31" href="https://yesterweb.org/no-to-web3/" target="_blank" rel="noopener noreferrer">
+                  <img src="/buttons/noweb3.gif" title="no web 3">
+                </a>
+                <a class="88x31" href="https://jointhefediverse.net" target="_blank" rel="noopener noreferrer">
+                  <img src="/buttons/federate.jpg" title="join the fediverse">
+                </a>
+                <a class="88x31" href="https://neovim.io/" target="_blank" rel="noopener noreferrer">
+                  <img src="/buttons/neovim.gif" title="neovim is the way">
+                </a>
+              </div>
             </section>
         </section>
 {% endblock %}
