@@ -12,7 +12,11 @@
                   <link>https://evilcyberhacker.net/blog/{{ post.date | replace(' ', '_') }}-{{ post.title | replace(' ', '_') }}.html</link>
                   <guid>https://evilcyberhacker.net/blog/{{ post.date | replace(' ', '_') }}-{{ post.title | replace(' ', '_') }}.html</guid>
                   <pubDate>{{ (post.date|to_datetime(format="%Y-%m-%d")).strftime('%a, %d %b %Y %T') }} +0000</pubDate>
-                  <description><![CDATA[{{ post.body|safe }}]]></description>
+                  {% if post.bodyfile is defined %}
+                  <description><![CDATA[{{ lookup('file', './posts/' + post.bodyfile + '.html') }}]]></description>
+                  {% else %}
+                  <description><![CDATA[{{ post.body|replace('\n', '<br>')|safe }}]]></description>
+                  {% endif %}
                 </item>
             {% endif %}
             {% endfor %}

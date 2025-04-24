@@ -12,7 +12,11 @@
             <section class="container">
                 <b>{{ item.date }} |  {{ item.title }} </b>
                 <p>
+                {% if item.bodyfile is defined %}
+                {% include './posts/' + item.bodyfile + '.html' %}
+                {% else %}
                 {{ item.body | replace('\n', '<br>')}}
+                {% endif %}
             </section>
             <div class="shariff"></div>
             <script src="/js/shariff.min.js"></script>
