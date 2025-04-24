@@ -5,17 +5,26 @@ site_title: darkphoenix
 site_url: https://evilcyberhacker.net
 
 description: I make stuff.  Some of this stuff is here. # Short description about yourself.
-about: "Note to self: put some text here I guess?" # About yourself.
+about: |
+  am a silly creachure :3c
+  <ul>
+    <li>Call me either Ash or phoenix please :)</li>
+    <li>some sort of genderfucked enbything (they/them is fine, but tbh go wild)</li>
+    <li><code>$PASSPORT == 'DE'</code> but can be found all over Europe</li>
+    <li>train nerd</li>
+    <li>Equally fluent in German and English, trying to learn Spanish</li>
+  </ul>
+  I keep a bunch of random things on this site, no promises any of them are worth your time but maybe some of them will be interesting :P
 profile: img/profile.jpg # Profile Picture for Home Page.
 #og_image: assets/profile.png # Open Graph Image for Link Previews
 home:
   icon: home # Icon for Home Button.
   text: Home # Text for Home Button link.
 reader_arrow: # Text for screen readers to read in place of the next arrow on the Home Page.
-email: mail@evilcyberhacker.net
+email: darkphoenix@evilcyberhacker.net
 github: darkphoenix
 twitter: dark_phoenix0 
-mastodon: https://social.evilcyberhacker.net/@jonas
+mastodon: https://not.an.evilcyberhacker.net/@darkphoenix
 matrix: "@darkphoenix:evilcyberhacker.net"
 #Email and social media urls.
 projects:
@@ -54,4 +63,24 @@ blog_posts:
       Noticing these things has sort of reshaped the way I view online meta discourse a fair bit, and I feel it’s certainly something we need to be aware of if we wish to actually have constructive discussions on related policy.  If we let corporations shape the very language we use to discuss them, it gives them an immense amount of power over our public discourse, and at the end of the day means even if we attempt to criticise them, we’re still ultimately doing that in the way they want us to – this is almost reminiscent of state propaganda to a degree, and I find it deeply concerning.
 
       I don’t really have a neat conclusion or all of the answers here, I just felt the need to attempt to somewhat coherently write out my thoughts of the last few weeks.  I’m still very much new to the format, too, so I’d love to hear feedback of any kind, both on the structure and the contents – this is a static site with no comments section, but feel free to write me an e-mail, hit me up on Matrix, or find me on the fediverse :P
+  -
+   title: "United States of Google - China's Way to Digital Totalitarianism"
+   date: '2022-10-23'
+   public: true
+   bodyfile: usog
+  -
+   title: "Is this thing still on?"
+   date: '2024-05-26'
+   public: false
+   body: |
+     mew
+  -
+   title: "Returning to recreational computer touching"
+   date: '2025-04-24'
+   public: true
+   body: |
+     Recently I have found myself returning to messing with my personal infrastructure and technology in general a lot more again, after a somewhat prolonged absence, ironically brought on by a new job - in a lot of ways, getting to play with certain things again, particularly in an environment with very nice tooling, has reminded me of how much I enjoy it, and while it's also obviously taken up a lot of time and energy learning new things, at the same time I can't help but find myself pulled back in to building more of my own tech again as well.
 
+     All that is to say, my own infrastructure has seen a number of upgrades, improvements, and refactors over the last week or two, most of them not visible, but I'll get around to reworking this website soon(tm) as well, so, more in this space soon! I'm actually trying to get myself to use this blog more often for off the cuff writing about interesting things I encounter. I'll probably also rework the internals of it and the design of the page around it a bit.
+
+     At the same time, I'm also taking a lot of this as a learning opportunity - working in a more professional, organised environment with good tooling and established practices is giving me a very different perspective, and I find myself very tempted to apply some of it to my personal work, too... oh, and btw, part of all this is now running on k3s :P
